@@ -23,6 +23,7 @@ executable Charon
     hs-source-dirs:   src
     other-modules:
                       Desc.Parser
+                      Generator
     -- other-extensions:
     build-depends:    base
                       , containers

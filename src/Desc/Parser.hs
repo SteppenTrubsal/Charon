@@ -1,7 +1,5 @@
-{-# LANGUAGE TemplateHaskell #-}
-module Desc.Parser (parseDesc) where
+module Desc.Parser (parseDesc, Desc) where
 
-import           Control.Lens
 import           Data.Maybe           (fromMaybe)
 import           System.Directory     (doesFileExist)
 import           Text.Parsec
@@ -17,7 +15,6 @@ data Desc = Desc {
       _descRegistry :: Maybe String,  -- Необязательное имя к REG файлу
       _descOutput :: String           -- Каталог для выходного кода значение по умолчанию "output"
     } deriving (Show)
-makeLenses ''Desc
 
 edsDef :: LanguageDef st
 edsDef = LanguageDef
