@@ -1,0 +1,4 @@
+Name = Test
+EDS = test.eds
+Filter = test.flt
+Register = test.reg
