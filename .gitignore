@@ -1,3 +1,5 @@
+*.rs
+
 dist
 dist-*
 cabal-dev
